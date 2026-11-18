@@ -47,7 +47,7 @@ const scrollToSection = (anchor: string) => {
             <div class=" sm:w-32 sm:h-12 shrink-0">
               <img
                 :src="BIG_LOGO"
-                alt="ШиП-монитор"
+                alt="ColdStat"
                 class="w-full h-full object-contain"
               >
             </div>
@@ -177,12 +177,12 @@ const scrollToSection = (anchor: string) => {
           <div class="w-24 h-24 sm:w-32 sm:h-12 shrink-0">
             <img
               :src="BIG_LOGO_D"
-              alt="ШиП-монитор"
+              alt="ColdStat"
               class="w-full h-full object-contain"
             >
           </div>
           <p class="text-xs sm:text-sm text-center">
-            © {{ new Date().getFullYear() }} ШиП-монитор · {{ $t("layout.footerNote") }}
+            © {{ new Date().getFullYear() }} ColdStat · {{ $t("layout.footerNote") }}
           </p>
           <a
             :href="`mailto:${SUPPORT_EMAIL}`"

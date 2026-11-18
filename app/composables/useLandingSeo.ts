@@ -17,21 +17,21 @@ const SEO: Record<
   }
 > = {
   ru: {
-    title: "ШиП-Монитор — система мониторинга холодильного оборудования",
+    title: "ColdStat — система мониторинга холодильного оборудования",
     description:
       "Система мониторинга холодильного оборудования: промышленные датчики температуры, онлайн-контроль 24/7, push и SMS-уведомления, автоматический журнал температуры и отчёты для складов, магазинов, аптек и пищевых производств.",
     ogDescription:
       "Холодильный контроллер и датчики температуры: онлайн-мониторинг 24/7, история показаний и уведомления при выходе за заданные границы — на сайте, push или SMS.",
-    siteName: "ШиП-Монитор",
+    siteName: "ColdStat",
     ogLocale: "ru_RU",
   },
   en: {
-    title: "Ship-Monitor — industrial refrigeration temperature monitoring",
+    title: "ColdStat — industrial refrigeration temperature monitoring",
     description:
-      "Ship-Monitor — refrigeration controller and temperature sensors for automated cold chain monitoring at food production facilities, warehouses, pharmacies and retail chains.",
+      "ColdStat — refrigeration controller and temperature sensors for automated cold chain monitoring at food production facilities, warehouses, pharmacies and retail chains.",
     ogDescription:
       "Refrigeration controller and temperature sensors: 24/7 online monitoring, reading history and alerts when values leave configured limits — web, push or SMS.",
-    siteName: "Ship-Monitor",
+    siteName: "ColdStat",
     ogLocale: "en_US",
   },
 };
