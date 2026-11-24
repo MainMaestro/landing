@@ -25,12 +25,12 @@ npm run lint       # eslint
 
 ## Env
 
-- `VITE_CMS_URL` — опционален; по умолчанию `https://cms.ship-monitor.ru`.
+- `VITE_CMS_URL` — опционален; по умолчанию `https://cms.coldstat.ru`.
 
 ## Docker
 
 ```bash
-docker build -t coldstat-landing --build-arg VITE_CMS_URL=https://cms.ship-monitor.ru .
+docker build -t coldstat-landing --build-arg VITE_CMS_URL=https://cms.coldstat.ru .
 docker run -p 3000:3000 coldstat-landing
 ```
 

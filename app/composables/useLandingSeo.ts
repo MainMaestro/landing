@@ -49,7 +49,7 @@ export function useLandingSeo(locale: AppLocale): void {
     ogTitle: seo.siteName,
     ogDescription: seo.ogDescription,
     ogUrl: canonical,
-    ogImage: `${SITE_URL}/logo.png`,
+    ogImage: `${SITE_URL}/logo.webp`,
     ogLocale: seo.ogLocale,
     ogLocaleAlternate: locale === "en" ? "ru_RU" : "en_US",
     twitterCard: "summary",
@@ -63,7 +63,7 @@ export function useLandingSeo(locale: AppLocale): void {
         "@id": `${SITE_URL}/#organization`,
         name: seo.siteName,
         url: `${SITE_URL}/`,
-        logo: `${SITE_URL}/logo.png`,
+        logo: `${SITE_URL}/logo.webp`,
         email: "support@ship-monitor.ru",
       },
       {

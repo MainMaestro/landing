@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const DEFAULT_CMS_URL = "https://cms.ship-monitor.ru";
+const DEFAULT_CMS_URL = "https://cms.coldstat.ru";
 
 const cmsApi = axios.create({
   baseURL: import.meta.env.VITE_CMS_URL || DEFAULT_CMS_URL,
