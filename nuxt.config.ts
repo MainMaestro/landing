@@ -28,10 +28,10 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: "icon", href: "/logo.png" },
+        { rel: "icon", type: "image/webp", href: "/logo.webp" },
         {
           rel: "preconnect",
-          href: "https://cms.ship-monitor.ru",
+          href: "https://cms.coldstat.ru",
           crossorigin: "",
         },
         {
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
 
   nitro: {
     routeRules: {
-      "/logo.png": {
+      "/logo.webp": {
         headers: { "cache-control": "public, max-age=86400" },
       },
       "/Dobryak_font.ttf": {

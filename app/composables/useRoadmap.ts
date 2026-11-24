@@ -53,8 +53,13 @@ async function doFetch(): Promise<void> {
       response = await cmsApi.get<RoadmapResponse>("/items/roadmap_items");
     }
 
-    if (response.status === 200 && response.data) {
-      rawItems.value = sortItems(response.data.data);
+    const items =
+      response.status === 200 && response.data
+        ? response.data.data
+        : undefined;
+
+    if (Array.isArray(items)) {
+      rawItems.value = sortItems(items);
     } else {
       error.value = "Failed to fetch roadmap data";
     }
@@ -98,8 +103,10 @@ export function getRawRoadmapItems(): RoadmapItem[] {
   return rawItems.value;
 }
 
-export function hydrateRoadmapItems(items: RoadmapItem[]): void {
-  if (rawItems.value.length === 0 && items.length > 0) {
+export function hydrateRoadmapItems(
+  items: RoadmapItem[] | undefined | null,
+): void {
+  if (Array.isArray(items) && rawItems.value.length === 0 && items.length > 0) {
     rawItems.value = items;
   }
 }

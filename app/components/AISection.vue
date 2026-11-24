@@ -24,7 +24,7 @@
               <div class="mt-9 grid h-14 place-items-center rounded-lg bg-[#1e2633] font-mono text-lg text-[#9ec5ff]">
                 +4.2°
               </div>
-              <span class="absolute bottom-5 left-5 font-extrabold">ШиП</span>
+              <span class="absolute bottom-5 left-5 font-extrabold">ColdStat</span>
             </div>
           </div>
           <div class="p-6 sm:p-8">
@@ -32,7 +32,7 @@
               {{ $t("devices.sensorCategory") }}
             </p>
             <h3 class="text-3xl font-bold">
-              ШиП T1
+              ColdStat T1
             </h3>
             <p class="mt-4 leading-7 text-moonless-night/50">
               {{ $t("devices.sensorDescription") }}
@@ -88,7 +88,7 @@
               <div class="mt-8 grid h-12 place-items-center rounded-lg bg-[#1e2633] font-mono text-sm text-[#9ec5ff]">
                 ONLINE
               </div>
-              <span class="absolute bottom-4 left-5 font-extrabold">ШиП</span>
+              <span class="absolute bottom-4 left-5 font-extrabold">ColdStat</span>
             </div>
           </div>
           <div class="p-6 sm:p-8">
@@ -96,7 +96,7 @@
               {{ $t("devices.hubCategory") }}
             </p>
             <h3 class="text-3xl font-bold">
-              ШиП Hub
+              ColdStat Hub
             </h3>
             <p class="mt-4 leading-7 text-moonless-night/50">
               {{ $t("devices.hubDescription") }}

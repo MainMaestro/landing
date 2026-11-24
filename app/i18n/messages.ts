@@ -11,7 +11,7 @@ export const messages = {
     },
     hero: {
       tagline: "Температура холодильного оборудования под контролем 24/7",
-      title: "ШиП-монитор",
+      title: "ColdStat",
       subtitle:
         "Промышленный холодильный контроллер и датчики температуры для автоматического контроля на пищевых производствах, складах, в аптеках и торговых сетях.",
       cta: "Подключить мониторинг",
@@ -36,7 +36,7 @@ export const messages = {
     },
     segments: {
       heading: "Кому это нужно",
-      headingAlt: "Система ШиП-Монитор",
+      headingAlt: "Система ColdStat",
       description:
         "Система мониторинга холодильного оборудования для бизнеса, где холод — это деньги: от одной камеры в кафе до распределённых складов и автопарка рефрижераторов. Автоматический журнал температуры вместо ручных замеров.",
       seg1Title: "Пищевые производства",
@@ -205,7 +205,7 @@ export const messages = {
     },
     hero: {
       tagline: "Refrigeration equipment temperature under control 24/7",
-      title: "Ship-Monitor",
+      title: "ColdStat",
       subtitle:
         "An industrial refrigeration controller and temperature sensors for automated cold chain monitoring at food production facilities, warehouses, pharmacies and retail chains.",
       cta: "Start monitoring",
@@ -230,7 +230,7 @@ export const messages = {
     },
     segments: {
       heading: "Who it is for",
-      headingAlt: "Ship-Monitor system",
+      headingAlt: "ColdStat system",
       description:
         "A refrigeration equipment monitoring system for businesses where cold means money: from a single cold room in a café to distributed warehouses and a reefer fleet. An automatic temperature log instead of manual readings.",
       seg1Title: "Food production",

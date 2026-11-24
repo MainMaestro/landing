@@ -41,8 +41,13 @@ async function doFetch(): Promise<void> {
       response = await cmsApi.get<FaqResponse>("/items/faq");
     }
 
-    if (response.status === 200 && response.data) {
-      rawItems.value = response.data.data;
+    const items =
+      response.status === 200 && response.data
+        ? response.data.data
+        : undefined;
+
+    if (Array.isArray(items)) {
+      rawItems.value = items;
     } else {
       error.value = "Failed to fetch FAQ data";
     }
@@ -86,8 +91,8 @@ export function getRawFaqItems(): FaqItem[] {
   return rawItems.value;
 }
 
-export function hydrateFaqItems(items: FaqItem[]): void {
-  if (rawItems.value.length === 0 && items.length > 0) {
+export function hydrateFaqItems(items: FaqItem[] | undefined | null): void {
+  if (Array.isArray(items) && rawItems.value.length === 0 && items.length > 0) {
     rawItems.value = items;
   }
 }

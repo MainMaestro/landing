@@ -1,8 +1,8 @@
-# ship-landing
+# coldstat-landing
 
-Публичный лендинг «ШиП-Монитор» (ship-monitor.ru) на **Nuxt 4 + SSR**.
+Публичный лендинг «ColdStat» (ship-monitor.ru) на **Nuxt 4 + SSR**.
 
-Отдельном проектом живёт кабинет пользователя (CSR SPA, репозиторий `ship-cloud-frontend`); ссылка на него — из этого README и `app/constants/` при необходимости.
+Отдельном проектом живёт кабинет пользователя (CSR SPA, репозиторий `coldstat-frontend`); ссылка на него — из этого README и `app/constants/` при необходимости.
 
 ## Что внутри
 
@@ -25,13 +25,13 @@ npm run lint       # eslint
 
 ## Env
 
-- `VITE_CMS_URL` — опционален; по умолчанию `https://cms.ship-monitor.ru`.
+- `VITE_CMS_URL` — опционален; по умолчанию `https://cms.coldstat.ru`.
 
 ## Docker
 
 ```bash
-docker build -t ship-landing --build-arg VITE_CMS_URL=https://cms.ship-monitor.ru .
-docker run -p 3000:3000 ship-landing
+docker build -t coldstat-landing --build-arg VITE_CMS_URL=https://cms.coldstat.ru .
+docker run -p 3000:3000 coldstat-landing
 ```
 
 Продакшен-рантайм — Node: `node .output/server/index.mjs`, порт 3000 (задаётся `NITRO_PORT`). Реверс-прокси на сервере должен проксировать `ship-monitor.ru` (включая `/en/`) на этот порт.
